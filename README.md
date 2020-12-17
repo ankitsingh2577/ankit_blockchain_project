@@ -1,3 +1,12 @@
+Author : Ankit Kumar Singh
+StudentID : x19205121
+Module : Blockchain
+Professor: Eoin Connolly
+gitHub : https://github.com/ankitsingh2577/ankit_blockchain_project 
+DocerHub : https://hub.docker.com/repository/docker/8379074499/neha 
+Image : docker pull 8379074499/neha:123
+
+
 # Ethereum - Ropsten Test Network (Tokens Distribution from one account to different accounts)
 
 
@@ -5,81 +14,31 @@
 
 We are transfering Ethereum ERC20 token on the Ropsten testnet and providing a code-based mechanism to perform basic token distributions from contract owner account to different accounts. 
 
-##Features
-1. Online Ticket Booking
-2. Easy to signup / signin
-3. View Account Details
-4. View Your Tickets
-5. Change Travel Date
-6. Delete Ticket
+##Setup Instructions
 
+To download this project:
 
-##Requirements
+    $ git clone https://github.com/ankitsingh2577/ankit_blockchain_project
 
-    express: "^4.17.1"
-    web3: "^1.3.0"
-    big-number: "^2.0.0",
-    big-numbers: "^0.1.4",
-    bignumber.js: "^9.0.1",
-   
+Open Remix on broswer using * https://remix.ethereum.org/ *
 
-## Installation
+    Copy the code from ERC20_ankit.sol and paste it in Remix (Creates Contract)
+    Compile and Deploy it on Ropsten testnet
+    once contract deployed - verify and publish your contract (To verify your contract does not have any malicious code)
 
-**To locally Host the Project** 
+To install the dependencies (web3, express, big-numbers, etc):
 
-Unzip the project and Paste it in htdocs folder
+    $npm install (Install all the dependencies for package.jason and package-lock.jason)
 
-To use this project have to setup the Database
-
-    create a database in MySQL server named ankitdb.
-
-Next, you should replace the database file
-
-    open database.php file
-    change the database credentials with yours
-
-You should import the sql file to your created database
-
-    import ankitdb.sql file via phpmyadmin or any other tools
-
-Finally, view the project using
-    
-    http://localhost/"name-of-the-project"/login.php
-    
-  <br />  
-    
-**To Host the Project on AWS (WIth CI/CD)** 
-
-Create Elastic Beanstalk Environment on aws for PHP
-    
-Create Codepipeline to connect your Github repository with AWS
-    
-    Use Github Webhook to trigger codbuild when you do any commits
-
-Create CodeBuild to Build your project (CI)
-
-    Specify the buildspec.yml file in the codebuild 
-    
-    buildspec.yml contains files that you want our build to produce
-    
-    Connect codebuild with Elastic beanstalk environment you have created earlier to deploy that produced file
-
-Create mysql database instance on AWS RDS (Relational Database Service)
- 
-    Ensure Database is publicly accesible
-    Note the RDS-mysql database endpoint and port number
-      
-Connect to mysql DB instance to Confiqure database (MySql workbench)   
-    
-    Enter the DB endpoint, port number and password to connect
-    create a database named ankitdb. 
-    import ankitdb.sql to create tables
-
-Replace the database file:
-
-    open database.php file
-    change the database credentials with yours (Host name should be AWS database endpoint)
-
-Finally, view the project Using the link AWS Elastic Beanstalk provided
+Change the Addresses, Private key and Infura ropsten url in all files (method.js and contract.js)
+        
+        Example: 
     
 
+
+
+Step IX : Install dependencies by running "npm i" command (All the required dependencies are already in package.json)
+
+Step X : Run method.js by using node method.js
+
+Step XI : Run handler.js using curl -XPOST http://localhost:8080/transfer or node handler.js
