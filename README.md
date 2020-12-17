@@ -3,8 +3,7 @@
 
 ## Introduction
 
-Bus Ticket Reservation System is an automated system for purchasing online bus tickets.
-This project has been hosted on AWs Beanstalk using CodePipeline and CodeBuild to achive continuous integrationon (CI) and continuous development. 
+We are transfering Ethereum ERC20 token on the Ropsten testnet and providing a code-based mechanism to perform basic token distributions from contract owner account to different accounts. 
 
 ##Features
 1. Online Ticket Booking
@@ -17,8 +16,12 @@ This project has been hosted on AWs Beanstalk using CodePipeline and CodeBuild t
 
 ##Requirements
 
-    php: <= 7.3
-    MySql: <= 8.0
+    express: "^4.17.1"
+    web3: "^1.3.0"
+    big-number: "^2.0.0",
+    big-numbers: "^0.1.4",
+    bignumber.js: "^9.0.1",
+   
 
 ## Installation
 
