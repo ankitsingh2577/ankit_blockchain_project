@@ -34,17 +34,19 @@ Open Remix on broswer using * https://remix.ethereum.org/ *
 
 To install the dependencies (web3, express, big-numbers, etc):
 
-    $npm install (Install all the dependencies for package.jason and package-lock.jason)
+    $npm install (Install all the dependencies from package.jason and package-lock.jason)
 
 Change the Addresses, Private key and Infura ropsten url in all files (method.js and contract.js)
         
-        Example: 
-    
+        Account address with your ropsten testnet account1 address i.e contract owner address
+        Private key with Your Ropsten testnet account1 private key
+        Infura ropsten URL with your Infura procject with endpoint Ropsten
+        Contract Addresss with your deployed Remix code contract address
 
+To transfer tocken
 
+        Run method.js : node method.js
 
-Step IX : Install dependencies by running "npm i" command (All the required dependencies are already in package.json)
+To tranfer tocken with rest api
 
-Step X : Run method.js by using node method.js
-
-Step XI : Run handler.js using curl -XPOST http://localhost:8080/transfer or node handler.js
+    Run handler.js : node handler.js or curl -XPOST http://localhost:8080/transfer
