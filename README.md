@@ -28,7 +28,7 @@ Change the Addresses, Private key and Infura ropsten url in all files (method.js
         
         Private key with Your Ropsten testnet account1 private key
         
-        Infura ropsten URL with your Infura procject with endpoint Ropsten (create Infura account - " url: https://infura.io/ ")
+        Infura ropsten URL with your Infura procject with endpoint Ropsten (create Infura account - " https://infura.io/ ")
         
         Contract Addresss with your deployed Remix code contract address 
         
