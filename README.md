@@ -20,7 +20,7 @@ Open Remix on broswer using * https://remix.ethereum.org/ *
 
 To install the dependencies (web3, express, big-numbers, etc):
 
-    $npm install (Install all the dependencies from package.jason and package-lock.jason)
+    $npm install (Install all the dependencies from package.json and package-lock.json)
 
 Change the Addresses, Private key and Infura ropsten url in all files (method.js and contract.js)
         
