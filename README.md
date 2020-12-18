@@ -50,3 +50,16 @@ To transfer tocken
 To tranfer tocken with rest api
 
     Run handler.js : node handler.js or curl -XPOST http://localhost:8080/transfer
+    
+To create and deploy docker image
+
+     1. build docker container
+        #$docker build -t [user/tag] . 
+
+#check it's in images
+#$docker images
+
+#to see running containers
+#docker ps 
+
+#docker run -p 49160:8080 --name ankit -d ankitsingh2577/x19205121
