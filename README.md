@@ -1,21 +1,4 @@
-Author : Ankit Kumar Singh
-
-StudentID : x19205121
-
-Module : Blockchain
-
-Professor: Eoin Connolly
-
-gitHub : https://github.com/ankitsingh2577/ankit_blockchain_project 
-
-DocerHub : https://hub.docker.com/repository/docker/ankitsingh2577/ankit_blockchain_project
-
-Pull Docker Image : docker pull ankitsingh2577/ankit_blockchain_project:2577
-
-
 # Ethereum - Ropsten Test Network (Tokens Distribution from one account to different accounts)
-
-
 ## Introduction
 
 We are transfering Ethereum ERC20 token on the Ropsten testnet and providing a code-based mechanism to perform basic token distributions from contract owner account to different accounts. 
@@ -43,23 +26,40 @@ Change the Addresses, Private key and Infura ropsten url in all files (method.js
         Infura ropsten URL with your Infura procject with endpoint Ropsten
         Contract Addresss with your deployed Remix code contract address
 
-To transfer tocken
+To transfer token
 
         Run method.js : node method.js
 
-To tranfer tocken with rest api
+To tranfer token with rest api
 
     Run handler.js : node handler.js or curl -XPOST http://localhost:8080/transfer
+
+##SDocker
+
+To create and deploy docker image to Docker Hub
+
+Build docker container 
+
+    docker build -t [user/tag] .
     
-To create and deploy docker image
+    ####*** Note : add .dockerignore as docker by default uses the Dockerfile ***
+    
+Check/Validate that your image is avilable
 
-     1. build docker container
-        #$docker build -t [user/tag] . 
+    docker images
+    
+To see running containers 
 
-#check it's in images
-#$docker images
+     docker ps 
+     
+To deploy and Reun docker continer
 
-#to see running containers
-#docker ps 
+    docker run -p 49160:8080 --name [directory name] -d [username/tag] 
+    
+Commint the image created
 
-#docker run -p 49160:8080 --name ankit -d ankitsingh2577/x19205121
+    docker commit [container id] [username/repository name]
+    
+Finally, Push commited container to  Docker Repository (Validate by cheeking container in Docker Hub with tag name)
+
+    docker push [username/repository name]:tag
