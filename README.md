@@ -10,7 +10,7 @@ gitHub : https://github.com/ankitsingh2577/ankit_blockchain_project
 
 DocerHub : https://hub.docker.com/repository/docker/ankitsingh2577/ankit_blockchain_project
 
-Image : docker pull ankitsingh2577/ankit_blockchain_project:2577
+Pull Docker Image : docker pull ankitsingh2577/ankit_blockchain_project:2577
 
 
 # Ethereum - Ropsten Test Network (Tokens Distribution from one account to different accounts)
