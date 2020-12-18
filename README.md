@@ -1,10 +1,16 @@
 Author : Ankit Kumar Singh
+
 StudentID : x19205121
+
 Module : Blockchain
+
 Professor: Eoin Connolly
+
 gitHub : https://github.com/ankitsingh2577/ankit_blockchain_project 
-DocerHub : https://hub.docker.com/repository/docker/8379074499/neha 
-Image : docker pull 8379074499/neha:123
+
+DocerHub : https://hub.docker.com/repository/docker/ankitsingh2577/ankit_blockchain_project
+
+Image : docker pull ankitsingh2577/ankit_blockchain_project:2577
 
 
 # Ethereum - Ropsten Test Network (Tokens Distribution from one account to different accounts)
