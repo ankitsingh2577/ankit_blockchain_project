@@ -1,9 +1,10 @@
 # Ethereum - Ropsten Test Network (Tokens Distribution from one account to different accounts)
+
 ## Introduction
 
 We are transfering Ethereum ERC20 token on the Ropsten testnet and providing a code-based mechanism to perform basic token distributions from contract owner account to different accounts. 
 
-##Setup Instructions
+## Setup Instructions
 
 To download this project:
 
@@ -39,9 +40,9 @@ To tranfer token with rest api
 
     Run handler.js : node handler.js or curl -XPOST http://localhost:8080/transfer
 
-##SDocker
+## Docker
 
-To create and deploy docker image to Docker Hub
+### To create and deploy docker image to Docker Hub
 
 Build docker container 
 
