@@ -50,7 +50,7 @@ Build docker container
 
     docker build -t [user/tag] .
     
-    ####*** Note : add .dockerignore as docker by default uses the Dockerfile ***
+    *** Note : add .dockerignore as docker by default uses the Dockerfile ***
     
 Check/Validate that your image is avilable
 
