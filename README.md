@@ -12,7 +12,9 @@ To download this project:
 Open Remix on broswer using * https://remix.ethereum.org/ *
 
     Copy the code from ERC20_ankit.sol and paste it in Remix (Creates Contract)
+    
     Compile and Deploy it on Ropsten testnet
+    
     once contract deployed - verify and publish your contract (To verify your contract does not have any malicious code)
 
 To install the dependencies (web3, express, big-numbers, etc):
@@ -22,8 +24,11 @@ To install the dependencies (web3, express, big-numbers, etc):
 Change the Addresses, Private key and Infura ropsten url in all files (method.js and contract.js)
         
         Account address with your ropsten testnet account1 address i.e contract owner address
+        
         Private key with Your Ropsten testnet account1 private key
+        
         Infura ropsten URL with your Infura procject with endpoint Ropsten
+        
         Contract Addresss with your deployed Remix code contract address
 
 To transfer token
